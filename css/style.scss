@@ -1,0 +1,86 @@
+@import "compass";
+
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$baseColor: #ffffff;
+$subColor: #bfbeb7;
+$keyColor: #545d7a;
+
+html{font-size: 62.5%;}
+
+.image{
+    background-image: url("../images/pexels-photo-728428.jpeg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;   
+}
+
+#container{
+    @include display-flex;
+    justify-content: space-between;
+    @include flex-direction(column);
+}
+.contents {
+    @include flex(1);
+    .title{
+        margin: auto;
+        text-align: center;
+        padding: 17px 0;
+        width: 80%;
+        display: block;
+        color: $keyColor;
+        font-weight: bold;
+        background-color: $subColor;
+        font-size: 2rem;
+    }
+    .message{
+        text-align: center;
+        margin:auto auto 10px auto;
+        padding: 40px 0;
+        width: 80%;
+        display: block;
+        color: $baseColor;
+        font-weight: bold;
+        background-color: $keyColor;
+        font-size: 2rem;
+    }
+}
+
+#titletitle{
+    text-align:center;
+    color:$keyColor;
+    margin:20px auto;
+    font-size:2rem;
+}
+
+.bottom-section{
+    background-color:$subColor;
+    height:150px;
+    text-align:center;
+
+    #button-name{
+        text-align:center;
+        color:$keyColor;
+        margin-top:10px;
+        padding-top:40px;
+        margin-bottom:5px;
+    }
+
+    #button{
+        margin: auto;
+        padding:5px 0;
+        width:200px;
+        background-color:$keyColor;
+        color:$baseColor;
+        @include border-radius(4px);
+    }
+}
+
+
+@media (min-width: 769px){
+    #container {
+        @include display-flex;
+        justify-content: space-between;
+        @include flex-direction(row);
+    }
+}

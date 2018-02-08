@@ -1,0 +1,76 @@
+html {
+  font-size: 62.5%; }
+
+.image {
+  background-image: url("../images/pexels-photo-728428.jpeg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center; }
+
+#container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+.contents {
+  -webkit-flex: 1;
+  flex: 1; }
+  .contents .title {
+    margin: auto;
+    text-align: center;
+    padding: 17px 0;
+    width: 80%;
+    display: block;
+    color: #545d7a;
+    font-weight: bold;
+    background-color: #bfbeb7;
+    font-size: 2rem; }
+  .contents .message {
+    text-align: center;
+    margin: auto auto 10px auto;
+    padding: 40px 0;
+    width: 80%;
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #545d7a;
+    font-size: 2rem; }
+
+#titletitle {
+  text-align: center;
+  color: #545d7a;
+  margin: 20px auto;
+  font-size: 2rem; }
+
+.bottom-section {
+  background-color: #bfbeb7;
+  height: 150px;
+  text-align: center; }
+  .bottom-section #button-name {
+    text-align: center;
+    color: #545d7a;
+    margin-top: 10px;
+    padding-top: 40px;
+    margin-bottom: 5px; }
+  .bottom-section #button {
+    margin: auto;
+    padding: 5px 0;
+    width: 200px;
+    background-color: #545d7a;
+    color: #ffffff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+
+@media (min-width: 769px) {
+  #container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: row;
+    flex-direction: row; } }
+
+/*# sourceMappingURL=style.css.map */
