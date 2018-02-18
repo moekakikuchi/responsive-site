@@ -1,10 +1,14 @@
 html {
   font-size: 62.5%; }
 
+body {
+  margin: 0px;
+  padding: 0px; }
+
 .image {
   background-image: url("../images/pexels-photo-728428.jpeg");
   width: 100%;
-  height: 500px;
+  height: 250px;
   background-size: cover;
   background-position: center center; }
 
@@ -66,6 +70,9 @@ html {
     border-radius: 4px; }
 
 @media (min-width: 769px) {
+  .image {
+    height: 500px; }
+
   #container {
     display: -webkit-flex;
     display: flex;
